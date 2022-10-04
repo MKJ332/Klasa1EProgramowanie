@@ -5,27 +5,48 @@
 
 #include <iostream>
 
+
+   //funkcja która pobierze dwie liczby oraz wykona podstawowe obliczenia artmetyczne
+void task1()
+{
+    int FirstNumber, SecondNumber;
+
+    std::cout << "Podaj pierwsza liczbe: \n";
+    std::cin >> FirstNumber ;
+
+    std::cout << "Podaj druga liczbe (nie podawaj zera): \n";
+    std::cin >> SecondNumber;
+
+
+    //suma, różnica,      iloczyn, iloraz
+    int sum, difference, product, quotient, rest ;
+
+    sum = FirstNumber + SecondNumber;
+    difference = FirstNumber - SecondNumber;
+    product = FirstNumber * SecondNumber;
+    quotient = FirstNumber / SecondNumber;
+    rest = FirstNumber % SecondNumber;
+
+
+
+    std::cout << "Suma" << sum << "\n";
+    std::cout << "Roznica" << difference << "\n";
+    std::cout << "Iloczyn" << product << "\n";
+    std::cout << "Iloraz" << quotient << "\n";
+    std::cout << "Reszta z dzielenia" << rest << "\n";
+
+
+
+
+
+
+
+}
+
 int main()
 {
-    
-    std::cout << "Hel\nlo World!\n";
-    std::cout << "Hello World!\n";
-
-    std::cout << "Predkosc to km\h";
-
-    std::cout << "Tabulator\ttabulator";
+    task1();
+}
 
 
-    std::cout << -56;
-    std::cout << "\n";
-    std::cout << "56";
-    std::cout << "\n";
-    std::cout << +15.5;
-    std::cout << "\n";
-    
 
-    std::cout << "podaj liczbe: \n";
-    int numberFromUser;
-    std::cin >> numberFromUser;
-    std::cout << "Podano: " << numberFromUser << "\n";
- } 
